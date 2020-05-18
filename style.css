@@ -1,92 +1,195 @@
 /*body*/
+    .st0{fill:#FFFF8D;}
+    .st1{fill:#EFE9DD;}
+    .st2{fill:#F7022F;}
+    .st3{fill:#FFEC00;}
+    .st4{fill:#80D16B;}
+    .st5{fill:#0C0C0C;}
+    .st6{fill:#0F0B0C;}
+    .st7{fill:#EBE5D8;}
+    .st8{fill:#EDE7DB;}
+    .st9{fill:#F70021;}
+    .st10{fill:#0C0C0C;}
+    .st11{fill:#EABE67;}
+    .st12{fill:#96AACC;}
+    .st13{fill:#EEE8DC;}
+    .st14{fill:#807E78;}
+    .st15{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
+    .st16{font-family:'OpenSans-Semibold';}
+    .st17{font-size:7px;}
+    .st18{letter-spacing:11;}
+    .st19{letter-spacing:14;}
+    .st20{letter-spacing:12;}
+    .st21{letter-spacing:15;}
+    .t0{fill:#004FB5;}
+    .t1{fill:#0C0C0C;}
+    .t2{fill:none;stroke:#FFFFFF;stroke-width:4.0387;stroke-miterlimit:10;}
+    .t3{fill:none;stroke:#FFFFFF;stroke-width:4;stroke-miterlimit:10;}
+    .t4{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
+    .t5{fill:#0E0B14;}
+    .t6{fill:#FFFFFF;}
+    .t7{fill:#100F0F;}
+    .t8{clip-path:url(#SVGID_2_);fill:#006D4E;}
+    .t9{fill:none;stroke:#006D4E;stroke-miterlimit:10;}
+    .t10{clip-path:url(#SVGID_4_);fill:#006D4E;}
+    .t11{fill:none;stroke:#006D4E;stroke-width:3;stroke-miterlimit:10;}
+    .t12{fill:#006D4E;}
+    .t13{clip-path:url(#SVGID_6_);fill:#FFFFFF;}
+    .t14{clip-path:url(#SVGID_8_);fill:#FFFFFF;}
+    .s0{fill:#FFFF8D;}
+    .s1{fill:#82817B;}
+    .s2{fill:#0C0C0C;}
+    .s3{fill:#FFFFFF;}
+    .s4{fill:#F80025;}
+    .s5{fill:#9D0002;}
+    .s6{fill:#AFB8CA;}
+    .s7{fill:none;stroke:#413B34;stroke-miterlimit:10;}
+    .s8{fill:none;stroke:#413B34;stroke-width:3;stroke-miterlimit:10;}
+    .s9{font-family:'OpenSans-ExtraboldItalic';}
+    .s10{font-size:24px;}
+    .s11{letter-spacing:1;}
+    .s12{font-family:'OpenSans-Bold';}
+    .s13{font-size:11px;}
+
 body{
-    text-align: center;
 }
 
 /*SVG*/
-svg{
-    width:40%;
+#Lichtstraal{
+    display:none;
 }
 
 /*SVG animatie*/
-#Vis :hover{
-    fill:green;
-}
 
-#Auto_1 :active {
+#Auto_1 {
   transform: translateY(0px);
-  animation: rijden 5s ease;
+  animation: none;
 }
 
 #Auto_2 {
   transform: translateY(0px);
-  animation: rijden2 5s 0.8s ease;
+  animation: none;
 }
 
 #Auto_3 {
   transform: translateY(0px);
-  animation: rijden3 5s 0.9s ease;
+  animation: none;
 }
 
+#Typemachine {
+  transform: translateY(0);
+  animation: zweef 3s 3s ease infinite;
+}
+
+#Vis {
+  transform: translateX(0px);
+  animation: slide 10s 1s ease infinite;
+}
+
+#Vissenkom {
+  transform: translateX(0px);
+  animation: slide 10s 1s ease infinite;
+}
+
+#Vissenkom :hover {
+  fill:#43e4ff;
+}
+
+/*SVG tekst*/
+
+#Olivetti_Lettera_22 {
+
+}
+
+#RUYS-OLI :hover{
+
+}
+#Een_schrijfmachine :hover{
+
+
+}
+
+/* hover */
+
+/*startup*/
+
+#Roze_vissenkom :active{ animation: none; }
+#Geel:active{ animation: 1s circle reverse; }
+
+#Zwart_blad:active { animation: 1s rotate reverse; }
+#Groen_vissenk:active { animation: 1s rotate reverse; }
+
+
+#Oranje_gebouw:active{ animation: 1s spiral reverse; }
+#Zwart_weg :active{ animation: 1s spiral reverse; }
+#Oranje_gebouw :active{ animation: 1s spiral reverse; }
+
+/*Responsive */
+/*
+svg{
+display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+    width:40%;
+    margin:0 30% 0 30%;
+}
+.vlak{
+    display:block;
+}
+
+@media only screen and (max-device-width: 667px){
+svg {
+    grid-template-columns: auto;
+    grid-gap: 10px;
+    width:100%;
+    margin:0;
+}
+    }
+*/
+
+div{display:flex; flex-wrap:wrap; width:100vw;}
+svg{width:25vw;}
+
+@media only screen and (max-width: 60em) {
+    svg{width:50vw;}
+}
+
+@media only screen and (max-width: 47em) {
+    svg{width:100vw;}
+}
+
+
+/* Keyframes */
 @keyframes rijden {
   0% {
     transform: translateY(0px);
   }
-  100% {
+100% {
     transform: translateY(-300px);
   }
 }
 
-@keyframes rijden2 {
+@keyframes slide {
   0% {
-    transform: translateY(0px);
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(100px);
   }
   100% {
-    transform: translateY(-300px);
+    transform: translateX(0px);
   }
 }
 
-@keyframes rijden3 {
+@keyframes zweef {
   0% {
-    transform: translateY(0px);
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
   }
   100% {
-    transform: translateY(-300px);
-  }
-}
-
-#Typemachine {
-  transform: translateY(0px);
-  animation: popup 10s 6.5s ease infinite;
-}
-@keyframes popup {
-  0% {
-    transform: translateY(0px);
-  }
-  34% {
-    transform: translateY(100px);
-  }
-  37% {
-    transform: translateY(50px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-
-.bootani {
-  animation: kaboom 5s ease alternate infinite;
-  &:nth-child(2) {
-    animation-delay: 0.1s;
-  }
-  &:nth-child(3) {
-    animation-delay: 0.2s;
-  }
-  &:nth-child(4) {
-    animation-delay: 0.3s;
-  }
-  &:nth-child(5) {
-    animation-delay: 0.4s;
+    transform: translateY(0);
   }
 }
 
@@ -99,39 +202,10 @@ svg{
   }
 }
 
-/*SVG tekst*/
-
-#Olivetti_Lettera_22 :hover {
-  animation: hideshow 3s 1s ease infinite;
-}
-#RUYS-OLI :hover{
-  opacity: 0;
-  animation: hideshow 3s 1s ease infinite;
-}
-#Een_schrijfmachine :hover{
-  opacity: 0;
-  animation: hideshow 3s 1s ease infinite;
-}
-@keyframes hideshow {
-  0% { opacity: 0; }
-  50% { opacity: 1;
-    fill:#F7022F;}
-  100% { opacity: 0; }
-}
-
-
-/*startup*/
-
-#Roze_vissenkom :active{ animation: 1s circle reverse; }
-#Geel:active{ animation: 1s circle reverse; }
-
 @keyframes circle {
   0% { clip-path: circle(75%); }
   100% { clip-path: circle(0%); }
 }
-
-#Zwart_blad:active { animation: 1s rotate reverse; }
-#Groen_vissenk:active { animation: 1s rotate reverse; }
 
 @keyframes rotate {
   0% { clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); }
@@ -140,11 +214,6 @@ svg{
   75% { clip-path: polygon(37.5% 62.5%, 37.5% 37.5%, 62.5% 37.5%, 62.5% 62.5%); }
   100% { clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%); }
 }
-
-
-#Oranje_gebouw:active{ animation: 1s spiral reverse; }
-#Zwart_weg :active{ animation: 1s spiral reverse; }
-#Oranje_gebouw :active{ animation: 1s spiral reverse; }
 
 @keyframes spiral {
   0% { clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 50%, 50% 50%, 25% 50%, 25% 75%, 75% 75%, 75% 25%, 0% 25%); }
