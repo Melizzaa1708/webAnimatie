@@ -3,158 +3,75 @@ body{
 }
 
 /*SVG*/
-#Lichtstraal :hover{
+#Lichtstraal{
     display:none;
 }
 
 /*SVG animatie*/
-#Vis :hover{
-    fill:green;
-}
 
-#Auto_1 :active {
+#Auto_1 {
   transform: translateY(0px);
-  animation: rijden 5s ease;
+  animation: none;
 }
 
 #Auto_2 {
   transform: translateY(0px);
-  animation: rijden2 5s 0.8s ease;
+  animation: none;
 }
 
 #Auto_3 {
   transform: translateY(0px);
-  animation: rijden3 5s 0.9s ease;
-}
-
-@keyframes rijden {
-  0% {
-    transform: translateY(0px);
-  }
-  100% {
-    transform: translateY(-300px);
-  }
-}
-
-@keyframes rijden2 {
-  0% {
-    transform: translateY(0px);
-  }
-  100% {
-    transform: translateY(-300px);
-  }
-}
-
-@keyframes rijden3 {
-  0% {
-    transform: translateY(0px);
-  }
-  100% {
-    transform: translateY(-300px);
-  }
+  animation: none;
 }
 
 #Typemachine {
-  transform: translateY(0px);
-  animation: popup 10s 6.5s ease infinite;
-}
-@keyframes popup {
-  0% {
-    transform: translateY(0px);
-  }
-  34% {
-    transform: translateY(100px);
-  }
-  37% {
-    transform: translateY(50px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+  transform: translateY(0);
+  animation: zweef 3s 3s ease infinite;
 }
 
-.bootani {
-  animation: kaboom 5s ease alternate infinite;
-  &:nth-child(2) {
-    animation-delay: 0.1s;
-  }
-  &:nth-child(3) {
-    animation-delay: 0.2s;
-  }
-  &:nth-child(4) {
-    animation-delay: 0.3s;
-  }
-  &:nth-child(5) {
-    animation-delay: 0.4s;
-  }
+#Vis {
+  transform: translateX(0px);
+  animation: slide 10s 1s ease infinite;
 }
 
-@keyframes kaboom {
-  90% {
-    transform: scale(1.0);
-  }
-  100% {
-    transform: scale(1.1);
-  }
+#Vissenkom {
+  transform: translateX(0px);
+  animation: slide 10s 1s ease infinite;
+}
+
+#Vissenkom :hover {
+  fill:#43e4ff;
 }
 
 /*SVG tekst*/
 
-#Olivetti_Lettera_22 :hover {
-  animation: hideshow 3s 1s ease infinite;
-}
-#RUYS-OLI :hover{
-  opacity: 0;
-  animation: hideshow 3s 1s ease infinite;
-}
-#Een_schrijfmachine :hover{
-  opacity: 0;
-  animation: hideshow 3s 1s ease infinite;
-}
-@keyframes hideshow {
-  0% { opacity: 0; }
-  50% { opacity: 1;
-    fill:#F7022F;}
-  100% { opacity: 0; }
+#Olivetti_Lettera_22 {
+
 }
 
+#RUYS-OLI :hover{
+
+}
+#Een_schrijfmachine :hover{
+
+
+}
+
+/* hover */
 
 /*startup*/
 
-#Roze_vissenkom :active{ animation: 1s circle reverse; }
+#Roze_vissenkom :active{ animation: none; }
+#Roze_vissenkom :hover{ fill:yellow; }
 #Geel:active{ animation: 1s circle reverse; }
-
-@keyframes circle {
-  0% { clip-path: circle(75%); }
-  100% { clip-path: circle(0%); }
-}
 
 #Zwart_blad:active { animation: 1s rotate reverse; }
 #Groen_vissenk:active { animation: 1s rotate reverse; }
-
-@keyframes rotate {
-  0% { clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); }
-  25% { clip-path: polygon(87.5% 12.5%, 87.5% 87.5%, 12.5% 87.5%, 12.5% 12.5%); }
-  50% { clip-path: polygon(75% 75%, 25% 75%, 25% 25%, 75% 25%); }
-  75% { clip-path: polygon(37.5% 62.5%, 37.5% 37.5%, 62.5% 37.5%, 62.5% 62.5%); }
-  100% { clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%); }
-}
 
 
 #Oranje_gebouw:active{ animation: 1s spiral reverse; }
 #Zwart_weg :active{ animation: 1s spiral reverse; }
 #Oranje_gebouw :active{ animation: 1s spiral reverse; }
-
-@keyframes spiral {
-  0% { clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 50%, 50% 50%, 25% 50%, 25% 75%, 75% 75%, 75% 25%, 0% 25%); }
-  14.25% { clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 25%, 75% 25%, 75% 75%, 50% 75%, 50% 50%, 50% 50%, 25% 50%, 25% 75%, 75% 75%, 75% 25%, 0% 25%); }
-  28.5% { clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 25%, 75% 25%, 75% 50%, 50% 50%, 50% 50%, 50% 50%, 25% 50%, 25% 75%, 75% 75%, 75% 25%, 0% 25%); }
-  42.75% { clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 25%, 25% 25%, 25% 50%, 25% 50%, 25% 50%, 25% 50%, 25% 50%, 25% 75%, 75% 75%, 75% 25%, 0% 25%); }
-  57% { clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 75%, 25% 75%, 25% 75%, 25% 75%, 25% 75%, 25% 75%, 25% 75%, 25% 75%, 75% 75%, 75% 25%, 0% 25%); }
-  71.25% { clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 75% 100%, 75% 75%, 75% 75%, 75% 75%, 75% 75%, 75% 75%, 75% 75%, 75% 75%, 75% 75%, 75% 75%, 75% 25%, 0% 25%); }
-  85.5% { clip-path: polygon(0% 0%, 100% 0%, 100% 25%, 75% 25%, 75% 25%, 75% 25%, 75% 25%, 75% 25%, 75% 25%, 75% 25%, 75% 25%, 75% 25%, 75% 25%, 75% 25%, 0% 25%); }
-  100% {clip-path: polygon(0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 25%, 0% 25%, 0% 25%, 0% 25%, 0% 25%, 0% 25%, 0% 25%); }
-}
 
 /*Responsive */
 svg{
@@ -176,3 +93,71 @@ svg {
     margin:0;
 }
     }
+
+
+/* Keyframes */
+@keyframes rijden {
+  0% {
+    transform: translateY(0px);
+  }
+100% {
+    transform: translateY(-300px);
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes zweef {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes kaboom {
+  90% {
+    transform: scale(1.0);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes circle {
+  0% { clip-path: circle(75%); }
+  100% { clip-path: circle(0%); }
+}
+
+@keyframes rotate {
+  0% { clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); }
+  25% { clip-path: polygon(87.5% 12.5%, 87.5% 87.5%, 12.5% 87.5%, 12.5% 12.5%); }
+  50% { clip-path: polygon(75% 75%, 25% 75%, 25% 25%, 75% 25%); }
+  75% { clip-path: polygon(37.5% 62.5%, 37.5% 37.5%, 62.5% 37.5%, 62.5% 62.5%); }
+  100% { clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%); }
+}
+
+@keyframes spiral {
+  0% { clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 50%, 50% 50%, 25% 50%, 25% 75%, 75% 75%, 75% 25%, 0% 25%); }
+  14.25% { clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 25%, 75% 25%, 75% 75%, 50% 75%, 50% 50%, 50% 50%, 25% 50%, 25% 75%, 75% 75%, 75% 25%, 0% 25%); }
+  28.5% { clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 25%, 75% 25%, 75% 50%, 50% 50%, 50% 50%, 50% 50%, 25% 50%, 25% 75%, 75% 75%, 75% 25%, 0% 25%); }
+  42.75% { clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 25%, 25% 25%, 25% 50%, 25% 50%, 25% 50%, 25% 50%, 25% 50%, 25% 75%, 75% 75%, 75% 25%, 0% 25%); }
+  57% { clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 75%, 25% 75%, 25% 75%, 25% 75%, 25% 75%, 25% 75%, 25% 75%, 25% 75%, 75% 75%, 75% 25%, 0% 25%); }
+  71.25% { clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 75% 100%, 75% 75%, 75% 75%, 75% 75%, 75% 75%, 75% 75%, 75% 75%, 75% 75%, 75% 75%, 75% 75%, 75% 25%, 0% 25%); }
+  85.5% { clip-path: polygon(0% 0%, 100% 0%, 100% 25%, 75% 25%, 75% 25%, 75% 25%, 75% 25%, 75% 25%, 75% 25%, 75% 25%, 75% 25%, 75% 25%, 75% 25%, 75% 25%, 0% 25%); }
+  100% {clip-path: polygon(0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 25%, 0% 25%, 0% 25%, 0% 25%, 0% 25%, 0% 25%, 0% 25%); }
+}
