@@ -15,6 +15,7 @@ lamp.addEventListener("mouseout", function () {
 var auto1 = document.getElementById("Auto_1");
 
 auto1.addEventListener("click", function () {
+    console.log('test');
     document.getElementById("Auto_1").style.animation = "rijden 5s ease";
     document.getElementById("Auto_2").style.animation = "rijden 5s 0.8s ease";
     document.getElementById("Auto_3").style.animation = "rijden 5s 0.9s ease";
