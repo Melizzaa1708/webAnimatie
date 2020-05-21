@@ -9,6 +9,7 @@
     .st7{fill:#EBE5D8;}
     .st8{fill:#EDE7DB;}
     .st9{fill:#F70021;}
+    .xx{fill:#72c2f7ad;}
     .st10{fill:#0C0C0C;}
     .st11{fill:#EABE67;}
     .st12{fill:#96AACC;}
@@ -84,6 +85,14 @@ body{
 #Vis {
   transform: translateX(0px);
   animation: slide 10s 1s ease infinite;
+  visibility: visible;
+    position:absolute;
+}
+
+#Vis2 {
+  visibility: hidden;
+  transform: translateX(0px);
+  animation: slide2 10s 1s ease infinite;
 }
 
 #Vissenkom {
@@ -91,10 +100,15 @@ body{
   animation: slide 10s 1s ease infinite;
 }
 
-#Vissenkom :hover {
-  fill:#43e4ff;
+#Blad1, #Blad_3, #Blad_4{
+    -webkit-animation: wobble-hor-bottom 3s 1s both infinite;
+            animation: wobble-hor-bottom 3s 1s both infinite;
 }
 
+#Blad2, #Blad_5{
+    -webkit-animation: wobble-hor-bottom 2s 2s both infinite;
+            animation: wobble-hor-bottom 2s 2s both infinite;
+}
 /*SVG tekst*/
 
 #Olivetti_Lettera_22 {
@@ -105,47 +119,49 @@ body{
 
 }
 #Een_schrijfmachine :hover{
-
-
 }
 
-/* hover */
+#Wata{
+animation: opac 3s infinite;
+visibility: hidden;
+}
+
+#Gebruik{
+visibility: hidden;
+}
 
 /*startup*/
 
-#Roze_vissenkom :active{ animation: none; }
+#Roze_vissenkom:active{ animation: 1s circle reverse; }
 #Geel:active{ animation: 1s circle reverse; }
 
 #Zwart_blad:active { animation: 1s rotate reverse; }
 #Groen_vissenk:active { animation: 1s rotate reverse; }
 
-
 #Oranje_gebouw:active{ animation: 1s spiral reverse; }
 #Zwart_weg :active{ animation: 1s spiral reverse; }
 #Oranje_gebouw :active{ animation: 1s spiral reverse; }
 
-/*Responsive */
-/*
-svg{
-display: grid;
-  grid-template-columns: auto auto;
-  grid-gap: 10px;
-    width:40%;
-    margin:0 30% 0 30%;
-}
-.vlak{
-    display:block;
+/* hover */
+#Blauw_typem :hover{
+    animation: rainbow 5s 0.9s infinite;
 }
 
-@media only screen and (max-device-width: 667px){
-svg {
-    grid-template-columns: auto;
-    grid-gap: 10px;
-    width:100%;
-    margin:0;
+#Zwart_blad :hover{
+    fill:#90e3e5;
 }
+
+#Groen_vissenk :hover{
+fill:#00bcd4;
     }
-*/
+
+#Roze_vissenkom :hover{
+    animation: rainbow 5s 0.9s infinite;
+}
+
+#Zwart_weg :hover{
+   fill:#227376;
+}
 
 div{display:flex; flex-wrap:wrap; width:100vw;}
 svg{width:25vw;}
@@ -160,6 +176,7 @@ svg{width:25vw;}
 
 
 /* Keyframes */
+
 @keyframes rijden {
   0% {
     transform: translateY(0px);
@@ -170,6 +187,18 @@ svg{width:25vw;}
 }
 
 @keyframes slide {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes slide2 {
   0% {
     transform: translateX(0px);
   }
@@ -207,6 +236,31 @@ svg{width:25vw;}
   100% { clip-path: circle(0%); }
 }
 
+@keyframes opac {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes rainbow {
+  0% { fill:red; }
+  25% { fill:yellow }
+  50% { fill:orange }
+  75% { fill:blue }
+  100% { fill:green; }
+}
+
+@keyframes links {
+  0% { transform: translateX(0px) rotate(0deg); }
+  50% { transform: translateX(-30px) rotate(-6deg); }
+  100% { transform: translateX(0px) rotate(0deg); }
+}
+
+@keyframes rechts {
+  0% { transform: translateX(0px) rotate(0deg); }
+  50% { transform: translateX(30px) rotate(6deg); }
+  100% { transform: translateX(0px) rotate(0deg); }
+}
+
 @keyframes rotate {
   0% { clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); }
   25% { clip-path: polygon(87.5% 12.5%, 87.5% 87.5%, 12.5% 87.5%, 12.5% 12.5%); }
@@ -225,3 +279,133 @@ svg{width:25vw;}
   85.5% { clip-path: polygon(0% 0%, 100% 0%, 100% 25%, 75% 25%, 75% 25%, 75% 25%, 75% 25%, 75% 25%, 75% 25%, 75% 25%, 75% 25%, 75% 25%, 75% 25%, 75% 25%, 0% 25%); }
   100% {clip-path: polygon(0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 25%, 0% 25%, 0% 25%, 0% 25%, 0% 25%, 0% 25%, 0% 25%); }
 }
+
+/**
+ * ----------------------------------------
+ * animation wobble-hor-bottom
+ * ----------------------------------------
+ */
+@-webkit-keyframes wobble-hor-bottom {
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateX(-30px) rotate(-6deg);
+            transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    -webkit-transform: translateX(15px) rotate(6deg);
+            transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    -webkit-transform: translateX(-15px) rotate(-3.6deg);
+            transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    -webkit-transform: translateX(9px) rotate(2.4deg);
+            transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    -webkit-transform: translateX(-6px) rotate(-1.2deg);
+            transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+@keyframes wobble-hor-bottom {
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateX(-30px) rotate(-6deg);
+            transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    -webkit-transform: translateX(15px) rotate(6deg);
+            transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    -webkit-transform: translateX(-15px) rotate(-3.6deg);
+            transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    -webkit-transform: translateX(9px) rotate(2.4deg);
+            transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    -webkit-transform: translateX(-6px) rotate(-1.2deg);
+            transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+
+
+/**
+ * ----------------------------------------
+ * animation wobble-hor-bottom2
+ * ----------------------------------------
+ */
+@-webkit-keyframes wobble-hor-bottom2 {
+  0%,
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateY(-30px) rotate(-6deg);
+            transform: translateY(-30px) rotate(-6deg);
+  }
+  30% {
+    -webkit-transform: translateY(15px) rotate(6deg);
+            transform: translateY(15px) rotate(6deg);
+  }
+  45% {
+    -webkit-transform: translateY(-15px) rotate(-3.6deg);
+            transform: translateY(-15px) rotate(-3.6deg);
+  }
+  60% {
+    -webkit-transform: translateY(9px) rotate(2.4deg);
+            transform: translateY(9px) rotate(2.4deg);
+  }
+  75% {
+    -webkit-transform: translateY(-6px) rotate(-1.2deg);
+            transform: translateY(-6px) rotate(-1.2deg);
+  }
+}
+@keyframes wobble-hor-bottom2 {
+  0%,
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateY(-30px) rotate(-6deg);
+            transform: translateY(-30px) rotate(-6deg);
+  }
+  30% {
+    -webkit-transform: translateY(15px) rotate(6deg);
+            transform: translateY(15px) rotate(6deg);
+  }
+  45% {
+    -webkit-transform: translateY(-15px) rotate(-3.6deg);
+            transform: translateY(-15px) rotate(-3.6deg);
+  }
+  60% {
+    -webkit-transform: translateY(9px) rotate(2.4deg);
+            transform: translateY(9px) rotate(2.4deg);
+  }
+  75% {
+    -webkit-transform: translateY(-6px) rotate(-1.2deg);
+            transform: translateY(-6px) rotate(-1.2deg);
+  }
+}
+
