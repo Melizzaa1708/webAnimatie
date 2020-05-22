@@ -6,6 +6,13 @@ geent.addEventListener("touchstart", function () {
     document.getElementById("Boot").style.animation = "wobble-hor-bottom 4s ease infinite";
 });
 
+var witg = document.getElementById("Wit_boot");
+
+witg.addEventListener("touchstart", function () {
+    console.log('hellow');
+    document.getElementById("Boot").style.animation = "wobble-hor-bottom 4s ease infinite";
+});
+
 var lamp2 = document.getElementById("Lamp");
 
 lamp2.addEventListener("touchstart", function () {
