@@ -1,3 +1,24 @@
+// Touch
+var geent = document.getElementById("Boot");
+
+geent.addEventListener("touchstart", function () {
+    console.log('hellow');
+    document.getElementById("Boot").style.animation = "wobble-hor-bottom 4s ease infinite";
+});
+
+var lamp2 = document.getElementById("Lamp");
+
+lamp2.addEventListener("touchstart", function () {
+    console.log('hellow');
+    document.getElementById("Lichtstraal").style.display = "inline";
+});
+
+lamp2.addEventListener("touchend", function () {
+    console.log('hellow');
+    document.getElementById("Lichtstraal").style.display = "none";
+});
+
+
 console.log('hellow');
 
 var lamp = document.getElementById("Lamp");
@@ -133,26 +154,3 @@ function voerfunctie4uit() {
              document.getElementById("Wata").style.visibility = "hidden";
 
 }
-
-
-// Touch
-var oranj = document.getElementById("Oranje_gebouw");
-
-oranj.addEventListener("touchstart", function () {
-    document.getElementById("Oranje_gebouw").style.fill = "green";
-});
-
-oranj.addEventListener("touchend", function () {
-    document.getElementById("Oranje_gebouw").style.fill = "red";
-});
-
-
-var lamp2 = document.getElementById("Lamp");
-
-lamp2.addEventListener("touchstart", function () {
-    document.getElementById("Lichtstraal").style.display = "inline";
-});
-
-lamp2.addEventListener("touchend", function () {
-    document.getElementById("Lichtstraal").style.display = "none";
-});
