@@ -170,7 +170,7 @@ svg{width:25vw;}
     svg{width:50vw;}
 }
 
-@media only screen and (max-width: 47em) {
+@media only screen and (max-width: 380px) {
     svg{width:100vw;}
 }
 
@@ -222,15 +222,6 @@ svg{width:25vw;}
   }
 }
 
-@keyframes kaboom {
-  90% {
-    transform: scale(1.0);
-  }
-  100% {
-    transform: scale(1.1);
-  }
-}
-
 @keyframes circle {
   0% { clip-path: circle(75%); }
   100% { clip-path: circle(0%); }
@@ -247,18 +238,6 @@ svg{width:25vw;}
   50% { fill:orange }
   75% { fill:blue }
   100% { fill:green; }
-}
-
-@keyframes links {
-  0% { transform: translateX(0px) rotate(0deg); }
-  50% { transform: translateX(-30px) rotate(-6deg); }
-  100% { transform: translateX(0px) rotate(0deg); }
-}
-
-@keyframes rechts {
-  0% { transform: translateX(0px) rotate(0deg); }
-  50% { transform: translateX(30px) rotate(6deg); }
-  100% { transform: translateX(0px) rotate(0deg); }
 }
 
 @keyframes rotate {

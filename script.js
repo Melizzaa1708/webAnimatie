@@ -133,3 +133,26 @@ function voerfunctie4uit() {
              document.getElementById("Wata").style.visibility = "hidden";
 
 }
+
+
+// Touch
+var oranj = document.getElementById("Oranje_gebouw");
+
+oranj.addEventListener("touchstart", function () {
+    document.getElementById("Oranje_gebouw").style.fill = "green";
+});
+
+oranj.addEventListener("touchend", function () {
+    document.getElementById("Oranje_gebouw").style.fill = "red";
+});
+
+
+var lamp2 = document.getElementById("Lamp");
+
+lamp2.addEventListener("touchstart", function () {
+    document.getElementById("Lichtstraal").style.display = "inline";
+});
+
+lamp2.addEventListener("touchend", function () {
+    document.getElementById("Lichtstraal").style.display = "none";
+});
