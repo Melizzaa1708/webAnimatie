@@ -4,6 +4,8 @@ https://melizzaa1708.github.io/webanimatie/
 ### Olivetti Lettera 22
 http://oa.letterformarchive.org/item?workID=lfa_pintori_0026
 
+![Olivetti Lettera 22](https://ia903100.us.archive.org/30/items/lfapintori0026/LFA_Pintori_0026_001.jpg)
+
 ## Het concept
 De pamflet is verticaal en kan het best op kleine schermen en iPad's bekeken worden. Om het op telefoon niet te klein te laten zijn heb ik er 1 kolom van gemaakt, op iPad 2 kolommen en op grote en normale schermen 4 kolommen volledig naast elkaar.
 Ik heb deze gekozen, omdat ik de uitgebalanceerde vormen erg interessant vond en er ook veel in het pamflet gebeurd. Ik verwachtte hiermee veel te kunnen doen.
