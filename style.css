@@ -1,148 +1,136 @@
-/*body*/
-    .st0{fill:#FFFF8D;}
-    .st1{fill:#EFE9DD;}
-    .st2{fill:#F7022F;}
-    .st3{fill:#FFEC00;}
-    .st4{fill:#80D16B;}
-    .st5{fill:#0C0C0C;}
-    .st6{fill:#0F0B0C;}
-    .st7{fill:#EBE5D8;}
-    .st8{fill:#EDE7DB;}
-    .st9{fill:#F70021;}
-    .xx{fill:#72c2f7ad;}
-    .st10{fill:#0C0C0C;}
-    .st11{fill:#EABE67;}
-    .st12{fill:#96AACC;}
-    .st13{fill:#EEE8DC;}
-    .st14{fill:#807E78;}
-    .st15{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
-    .st16{font-family:'OpenSans-Semibold';}
-    .st17{font-size:7px;}
-    .st18{letter-spacing:11;}
-    .st19{letter-spacing:14;}
-    .st20{letter-spacing:12;}
-    .st21{letter-spacing:15;}
-    .t0{fill:#004FB5;}
-    .t1{fill:#0C0C0C;}
-    .t2{fill:none;stroke:#FFFFFF;stroke-width:4.0387;stroke-miterlimit:10;}
-    .t3{fill:none;stroke:#FFFFFF;stroke-width:4;stroke-miterlimit:10;}
-    .t4{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
-    .t5{fill:#0E0B14;}
-    .t6{fill:#FFFFFF;}
-    .t7{fill:#100F0F;}
-    .t8{clip-path:url(#SVGID_2_);fill:#006D4E;}
-    .t9{fill:none;stroke:#006D4E;stroke-miterlimit:10;}
-    .t10{clip-path:url(#SVGID_4_);fill:#006D4E;}
-    .t11{fill:none;stroke:#006D4E;stroke-width:3;stroke-miterlimit:10;}
-    .t12{fill:#006D4E;}
-    .t13{clip-path:url(#SVGID_6_);fill:#FFFFFF;}
-    .t14{clip-path:url(#SVGID_8_);fill:#FFFFFF;}
-    .s0{fill:#FFFF8D;}
-    .s1{fill:#82817B;}
-    .s2{fill:#0C0C0C;}
-    .s3{fill:#FFFFFF;}
-    .s4{fill:#F80025;}
-    .s5{fill:#9D0002;}
-    .s6{fill:#AFB8CA;}
-    .s7{fill:none;stroke:#413B34;stroke-miterlimit:10;}
-    .s8{fill:none;stroke:#413B34;stroke-width:3;stroke-miterlimit:10;}
-    .s9{font-family:'OpenSans-ExtraboldItalic';}
-    .s10{font-size:24px;}
-    .s11{letter-spacing:1;}
-    .s12{font-family:'OpenSans-Bold';}
-    .s13{font-size:11px;}
+/***** Lizz Moraal - 22 mei 2020 - Web animatie   ********************************************/
 
-body{
-}
+/*********************************************************************************************/
+/********************************   SVG styles  **********************************************/
+/*********************************************************************************************/
 
-/*SVG*/
-#Lichtstraal{
-    display:none;
-}
+.st0{fill:#FFFF8D;}
+.st1{fill:#EFE9DD;}
+.st2{fill:#F7022F;}
+.st3{fill:#FFEC00;}
+.st4{fill:#80D16B;}
+.st5{fill:#0C0C0C;}
+.st6{fill:#0F0B0C;}
+.st7{fill:#EBE5D8;}
+.st8{fill:#EDE7DB;}
+.st9{fill:#F70021;}
+.xx{fill:#72c2f7ad;}
+.st10{fill:#0C0C0C;}
+.st11{fill:#EABE67;}
+.st12{fill:#96AACC;}
+.st13{fill:#EEE8DC;}
+.st14{fill:#807E78;}
+.st15{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
+.st16{font-family:'OpenSans-Semibold';}
+.st17{font-size:7px;}
+.st18{letter-spacing:11;}
+.st19{letter-spacing:14;}
+.st20{letter-spacing:12;}
+.st21{letter-spacing:15;}
+.t0{fill:#004FB5;}
+.t1{fill:#0C0C0C;}
+.t2{fill:none;stroke:#FFFFFF;stroke-width:4.0387;stroke-miterlimit:10;}
+.t3{fill:none;stroke:#FFFFFF;stroke-width:4;stroke-miterlimit:10;}
+.t4{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
+.t5{fill:#0E0B14;}
+.t6{fill:#FFFFFF;}
+.t7{fill:#100F0F;}
+.t8{clip-path:url(#SVGID_2_);fill:#006D4E;}
+.t9{fill:none;stroke:#006D4E;stroke-miterlimit:10;}
+.t10{clip-path:url(#SVGID_4_);fill:#006D4E;}
+.t11{fill:none;stroke:#006D4E;stroke-width:3;stroke-miterlimit:10;}
+.t12{fill:#006D4E;}
+.t13{clip-path:url(#SVGID_6_);fill:#FFFFFF;}
+.t14{clip-path:url(#SVGID_8_);fill:#FFFFFF;}
+.s0{fill:#FFFF8D;}
+.s1{fill:#82817B;}
+.s2{fill:#0C0C0C;}
+.s3{fill:#FFFFFF;}
+.s4{fill:#F80025;}
+.s5{fill:#9D0002;}
+.s6{fill:#AFB8CA;}
+.s7{fill:none;stroke:#413B34;stroke-miterlimit:10;}
+.s8{fill:none;stroke:#413B34;stroke-width:3;stroke-miterlimit:10;}
+.s9{font-family:'OpenSans-ExtraboldItalic';}
+.s10{font-size:24px;}
+.s11{letter-spacing:1;}
+.s12{font-family:'OpenSans-Bold';}
+.s13{font-size:11px;}
 
-/*SVG animatie*/
 
-#Auto_1 {
-  transform: translateY(0px);
-  animation: none;
-}
-
-#Auto_2 {
-  transform: translateY(0px);
-  animation: none;
-}
-
-#Auto_3 {
-  transform: translateY(0px);
-  animation: none;
-}
-
-#Typemachine {
-  transform: translateY(0);
-  animation: zweef 3s 3s ease infinite;
-}
-
-#Vis {
-  transform: translateX(0px);
-  animation: slide 10s 1s ease infinite;
-  visibility: visible;
-    position:absolute;
-}
-
-#Vis2 {
-  visibility: hidden;
-  transform: translateX(0px);
-  animation: slide2 10s 1s ease infinite;
-}
-
-#Vissenkom {
-  transform: translateX(0px);
-  animation: slide 10s 1s ease infinite;
-}
+/*********************************************************************************************/
+/**********************   THINGS THAT ARE ANIMATIE WHEN PAGE START  **************************/
+/*********************************************************************************************/
 
 #Blad1, #Blad_3, #Blad_4{
     -webkit-animation: wobble-hor-bottom 3s 1s both infinite;
-            animation: wobble-hor-bottom 3s 1s both infinite;
+    animation: wobble-hor-bottom 3s 1s both infinite;
 }
 
 #Blad2, #Blad_5{
     -webkit-animation: wobble-hor-bottom 2s 2s both infinite;
-            animation: wobble-hor-bottom 2s 2s both infinite;
-}
-/*SVG tekst*/
-
-#Olivetti_Lettera_22 {
-
+    animation: wobble-hor-bottom 2s 2s both infinite;
 }
 
-#RUYS-OLI :hover{
+#Lichtstraal{
+    display:none;
+}
 
+#Typemachine {
+    transform: translateY(0);
+    animation: zweef 3s 3s ease infinite;
 }
-#Een_schrijfmachine :hover{
+
+#Vis {
+    transform: translateX(0px);
+    animation: slide 10s 1s ease infinite;
+    visibility: visible;
+    position:absolute;
 }
+
+#Vissenkom {
+    transform: translateX(0px);
+    animation: slide 10s 1s ease infinite;
+}
+
+/*********************************************************************************************/
+/**********************   THINGS THAT ARE HIDDEN AT FIRST SIGHT  *****************************/
+/*********************************************************************************************/
 
 #Wata{
-animation: opac 3s infinite;
-visibility: hidden;
+    animation: opac 3s infinite;
+    visibility: hidden;
 }
 
 #Gebruik{
-visibility: hidden;
+    visibility: hidden;
 }
 
-/*startup*/
+#Vis2 {
+    visibility: hidden;
+    transform: translateX(0px);
+    animation: slide2 10s 1s ease infinite;
+}
 
-#Roze_vissenkom:active{ animation: 1s circle reverse; }
-#Geel:active{ animation: 1s circle reverse; }
+/*********************************************************************************************/
+/********************************   ACTIVE  **************************************************/
+/*********************************************************************************************/
 
-#Zwart_blad:active { animation: 1s rotate reverse; }
-#Groen_vissenk:active { animation: 1s rotate reverse; }
+#Roze_vissenkom:active{animation: 1s circle reverse;}
+#Geel:active{animation: 1s circle reverse;}
 
-#Oranje_gebouw:active{ animation: 1s spiral reverse; }
-#Zwart_weg :active{ animation: 1s spiral reverse; }
-#Oranje_gebouw :active{ animation: 1s spiral reverse; }
+#Zwart_blad:active {animation: 1s rotate reverse;}
+#Groen_vissenk:active {animation: 1s rotate reverse;}
 
-/* hover */
+#Oranje_gebouw:active{animation: 1s spiral reverse;}
+#Zwart_weg :active{animation: 1s spiral reverse;}
+#Oranje_gebouw :active{animation: 1s spiral reverse;}
+
+
+/*********************************************************************************************/
+/********************************   HOVER  ***************************************************/
+/*********************************************************************************************/
+
 #Blauw_typem :hover{
     animation: rainbow 5s 0.9s infinite;
 }
@@ -152,7 +140,7 @@ visibility: hidden;
 }
 
 #Groen_vissenk :hover{
-fill:#00bcd4;
+    fill:#00bcd4;
     }
 
 #Roze_vissenkom :hover{
@@ -163,19 +151,29 @@ fill:#00bcd4;
    fill:#227376;
 }
 
+
+/*********************************************************************************************/
+/********************************   MEDIA ONLY  **********************************************/
+/*********************************************************************************************/
+
 div{display:flex; flex-wrap:wrap; width:100vw;}
+
 svg{width:25vw;}
 
-@media only screen and (max-width: 60em) {
+@media only screen and (max-width: 60em)
+{
     svg{width:50vw;}
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 380px)
+{
     svg{width:100vw;}
 }
 
 
-/* Keyframes */
+/*********************************************************************************************/
+/********************************   KEYFRAMES  **********************************************/
+/*********************************************************************************************/
 
 @keyframes rijden {
   0% {
@@ -323,12 +321,6 @@ svg{width:25vw;}
   }
 }
 
-
-/**
- * ----------------------------------------
- * animation wobble-hor-bottom2
- * ----------------------------------------
- */
 @-webkit-keyframes wobble-hor-bottom2 {
   0%,
   100% {

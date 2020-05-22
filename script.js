@@ -1,10 +1,19 @@
-// Touch
+/***** Lizz Moraal - 22 mei 2020 - Web animatie   ********************************************/
+
+/*********************************************************************************************/
+/********************************   PHONE   **************************************************/
+/*********************************************************************************************/
+
+/******************************   Boot varen    **********************************************/
+
 var geent = document.getElementById("Een_schrijfmachine");
 
 geent.addEventListener("touchstart", function () {
     console.log('hellow');
     document.getElementById("Boot").style.animation = "wobble-hor-bottom 4s ease infinite";
 });
+
+/****************************   Lamp aan/uit   *************************************************/
 
 var lamp2 = document.getElementById("Lamp");
 
@@ -18,8 +27,86 @@ lamp2.addEventListener("touchend", function () {
     document.getElementById("Lichtstraal").style.display = "none";
 });
 
+/********************************   animeren zwart blad   **************************************************/
+
+var zwart = document.getElementById("Zwart_blad");
+
+zwart.addEventListener("touchstart", function () {
+    console.log('test');
+    document.getElementById("Zwart_blad").style.animation = "1s rotate reverse";
+});
+
+zwart.addEventListener("touchend", function () {
+    console.log('test');
+    document.getElementById("Zwart_blad").style.animation = "none";
+});
+
+/********************************   animeren rode vlak   **************************************************/
+
+var roz = document.getElementById("Roze_vissenkom");
+
+roz.addEventListener("touchstart", function () {
+    console.log('test');
+    document.getElementById("Roze_vissenkom").style.animation = "1s circle reverse";
+});
+
+roz.addEventListener("touchend", function () {
+    console.log('test');
+    document.getElementById("Roze_vissenkom").style.animation = "none";
+});
+
+/********************************   animeren groen vierkant   **************************************************/
+
+var gro = document.getElementById("Groen_vissenk");
+
+gro.addEventListener("touchstart", function () {
+    console.log('test');
+    document.getElementById("Groen_vissenk").style.animation = "1s rotate reverse";
+});
+
+gro.addEventListener("touchend", function () {
+    console.log('test');
+    document.getElementById("Groen_vissenk").style.animation = "none";
+});
+
+/********************************   animeren blauw vierkant   **************************************************/
+
+var bl = document.getElementById("Blauw_typem");
+
+bl.addEventListener("touchstart", function () {
+    console.log('test');
+    document.getElementById("Blauw_typem").style.animation = "rainbow 5s 0.9s infinite";
+});
+
+bl.addEventListener("touchend", function () {
+    console.log('test');
+    document.getElementById("Blauw_typem").style.animation = "none";
+});
+
+/********************************   animeren oranje vierkant   **************************************************/
+
+var or = document.getElementById("Oranje_gebouw");
+
+or.addEventListener("touchstart", function () {
+    console.log('test');
+    document.getElementById("Oranje_gebouw").style.animation = "1s spiral reverse";
+});
+
+or.addEventListener("touchend", function () {
+    console.log('test');
+    document.getElementById("Oranje_gebouw").style.animation = "none";
+});
+
+
+/*********************************************************************************************/
+/********************************    PC     **************************************************/
+/*********************************************************************************************/
+
+/********************************   test   **************************************************/
 
 console.log('hellow');
+
+/***************************   lamp aan uit zetten   ****************************************/
 
 var lamp = document.getElementById("Lamp");
 
@@ -31,7 +118,7 @@ lamp.addEventListener("mouseout", function () {
     document.getElementById("Lichtstraal").style.display = "none";
 });
 
-//
+/***************************   auto's rijden   *********************************************/
 
 var auto1 = document.getElementById("Auto_1");
 
@@ -74,7 +161,7 @@ auto5.addEventListener("click", function () {
     document.getElementById("Auto_5").style.animation = "rijden 5s 0.8s ease";
 });
 
-//
+/***************************   1 of meer vis  *********************************************/
 
 var visse = document.getElementById("Vissenkom");
 
@@ -88,7 +175,7 @@ visse.addEventListener("mouseout", function () {
     document.getElementById("Vis2").style.visibility = "hidden";
 });
 
-//
+/***********************   Nieuwe tekst schrijfmachine   *******************************/
 
 var typen = document.getElementById("Een_schrijfmachine");
 
@@ -97,7 +184,8 @@ typen.addEventListener("mouseover", function () {
     document.getElementById("Gebruik").style.visibility = "visible";
 });
 
-//
+/********************************   regenboog   **************************************************/
+
 var rainbow = document.getElementById("Olivetti_Lettera_22");
 
 rainbow.addEventListener("mouseover", function () {
@@ -108,7 +196,7 @@ rainbow.addEventListener("mouseout", function () {
     document.getElementById("Olivetti_Lettera_22").style.animation = "none";
 });
 
-//
+/********************************   keyboard shizzle   *******************************************/
 
 var body = document.querySelector("body");
 
