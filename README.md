@@ -37,8 +37,8 @@ Ik ben het meest trots op dat ik uiteindelijk na heel lang proberen, hulp vragen
 ## CSS tricks
 Ik heb voornamelijk veel gebruik gemaakt van @keyframes, ook fill, @media only voor de grid, :hover en :active en ook wat Javascript voor de finishing touch.
 
-## Hoe het werkt
-In principe is alles zichtbaar wat er gedaan kan worden, maar door het langer ingedrukt te houden kun je nog wat extra's doen en je moet over de tekst hoveren om te zien dat je de boot kunt animeren met de pijltjes toetsen.
+## Wat ik echt niet voor elkaar krijg
+Ik krijg het echt niet voor elkaar om de RUYS OLIVETTI RUYS op de juiste plek te krijgen. Hoe vaak ik ook opnieuw de css code erbij pak of hem aanpas, de juiste letterspacing wordt niet goed overgenomen.
 
 ## Studenten informatie
 Lizz Moraal - 500758530 - 22 mei 2020 - Danny de Vries - Web Animatie
