@@ -1,14 +1,7 @@
 // Touch
-var geent = document.getElementById("Boot");
+var geent = document.getElementById("Een_schrijfmachine");
 
 geent.addEventListener("touchstart", function () {
-    console.log('hellow');
-    document.getElementById("Boot").style.animation = "wobble-hor-bottom 4s ease infinite";
-});
-
-var witg = document.getElementById("Wit_boot");
-
-witg.addEventListener("touchstart", function () {
     console.log('hellow');
     document.getElementById("Boot").style.animation = "wobble-hor-bottom 4s ease infinite";
 });
