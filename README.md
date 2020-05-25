@@ -2,6 +2,7 @@
 https://melizzaa1708.github.io/webanimatie/
 
 ### Olivetti Lettera 22
+Olivetti Lettera 22 is een pamflet dat bestaat uit vier pagina's. Welke gaat over een typemachine.
 http://oa.letterformarchive.org/item?workID=lfa_pintori_0026
 
 ![Olivetti Lettera 22](https://ia903100.us.archive.org/30/items/lfapintori0026/LFA_Pintori_0026_001.jpg)
