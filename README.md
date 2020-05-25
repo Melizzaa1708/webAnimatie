@@ -7,8 +7,10 @@ http://oa.letterformarchive.org/item?workID=lfa_pintori_0026
 ![Olivetti Lettera 22](https://ia903100.us.archive.org/30/items/lfapintori0026/LFA_Pintori_0026_001.jpg)
 
 ## Het concept
+Ik heb deze gekozen, omdat ik de uitgebalanceerde vormen erg interessant vond en er ook veel in het pamflet gebeurd. Ik verwachtte hiermee veel te kunnen doen. Ik vind deze stijlsoort altijd erg interessant. 
+
+## Responsive
 De pamflet is verticaal en kan het best op kleine schermen en iPad's bekeken worden. Om het op telefoon niet te klein te laten zijn heb ik er 1 kolom van gemaakt, op iPad 2 kolommen en op grote en normale schermen 4 kolommen volledig naast elkaar.
-Ik heb deze gekozen, omdat ik de uitgebalanceerde vormen erg interessant vond en er ook veel in het pamflet gebeurd. Ik verwachtte hiermee veel te kunnen doen.
 
 ## Herkenbaarheid
 De pamflet is goed te herkennen aan de scherpe randen, onrechte vormen en het flatdesign met 1 of 2 kleuren en geen tot nauwelijks schaduwen. Het pamflet doet denken of dat het uitgeknipt is.
@@ -20,7 +22,9 @@ Ik ben het meest trots op dat ik uiteindelijk na heel lang proberen, hulp vragen
 - Click: Auto 1,2 en 3 rijden weg. Het maakt niet uit over je op 1,2 of 3 klikt, ze rijden alle drie weg. Hetzelfde geldt voor 4 en 5. (de auto's zijn de grijze vlakken op het zwarte gedeelte (rijke fantasie))
 - Mouseover: Lamp aan, meerdere vissen in de kom, een schrijfmachine veranderen in Gebruik de pijltjes toetsen om...,                      regenboog Olivetti letters
 - Mouseout: Lamp uit, 1 vis in de kom, Gebruik de pijltjes toetsen om... veranderen in een schrijfmachine, gewone Olivetti   
-            letters
+            letters.
+- Touchstart: Wanneer je met je vinger het scherm aanraakt gaat de lamp aan, gaan de vlakken animeren en de boot varen (wanneer je de tekst van de schrijfmachine aanklikt) Dit heb ik gedaan om de keyboard en :active te vervangen.
+- Touchend: Wanneer je met je vinger het scherm loslaat dan gaat de lamp uit en stoppen de vlakken met animeren.
 - Keypress: Key-down: Boot gaat op en neer
 - Keypress: Key-up: Boot gaat heen en weer
 - Keypress: Key-left: Water komt omhoog
